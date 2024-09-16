@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: 'https://deployusers-frontends.vercel.app', // Replace with your frontend URL
+    origin: 'https://deployusers-frontends1.vercel.app', // Replace with your frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
   }));
