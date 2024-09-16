@@ -12,6 +12,10 @@ app.use(cors({
     methods: ["GET", "POST"],
     credentials: true
   }));
+
+  // Enable pre-flight requests for all routes
+app.options('*', cors());
+
 app.use(express.json());
 
 // MongoDB Connection
