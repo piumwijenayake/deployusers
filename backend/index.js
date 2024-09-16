@@ -8,10 +8,10 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: '*',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    credentials: true 
-}));
+    origin: ["https://deployusers-front.vercel.app"], // Replace with your frontend URL
+    methods: ["GET", "POST"],
+    credentials: true
+  }));
 app.use(express.json());
 
 // MongoDB Connection
