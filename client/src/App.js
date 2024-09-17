@@ -6,6 +6,7 @@ const App = () => {
   const [email, setEmail] = useState('');
 
   const handleSubmit = async (e) => {
+    
     e.preventDefault();
     const res = await fetch('https://deployusers-three.vercel.app/api/users', {
       method: 'POST',
