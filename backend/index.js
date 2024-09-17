@@ -8,9 +8,10 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://66e937e3a69788c3f2ec6eb6--zippy-melba-aa5f46.netlify.app', // Allow Netlify domain
-  methods: ['GET', 'POST'], // Allow specific methods
-  credentials: true // Allow credentials (e.g., cookies)
+  origin: 'https://66e937e3a69788c3f2ec6eb6--zippy-melba-aa5f46.netlify.app', // Your Netlify frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
 }));
 
 // Enable pre-flight requests for all routes
