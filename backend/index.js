@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: "*", // Replace with your frontend URL
+  origin: "https://66e937e3a69788c3f2ec6eb6--zippy-melba-aa5f46.netlify.app", // Replace with your frontend URL
     methods: ["GET", "POST"],
     credentials: true
   }));
