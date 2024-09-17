@@ -11,7 +11,7 @@ const App = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch('https://deployusers-three.vercel.app/api/users', {
+      const res = await fetch('https://deployusers-delta.vercel.app/api/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
