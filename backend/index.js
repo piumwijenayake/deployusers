@@ -15,7 +15,12 @@ app.use(cors({
 }));
 
 // Enable pre-flight requests for all routes
-app.options('*', cors());  // This will handle the OPTIONS pre-flight request
+app.options('*', (req, res) => {
+  res.header('Access-Control-Allow-Origin', 'https://66e977939aca25160c965b8b--keen-hamster-d5813b.netlify.app');
+  res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.sendStatus(200); // Send OK status for OPTIONS
+}); // This will handle the OPTIONS pre-flight request
 
 // Middleware for JSON
 app.use(express.json());
